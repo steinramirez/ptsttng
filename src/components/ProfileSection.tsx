@@ -13,7 +13,7 @@ function ProfileSection() {
       <div className="photo-wrapper">
       <div className="info-wrapper">
         <img src="./profileimg1.png" alt="Foto de perfil"/>
-        <h2>Amy Smith</h2>
+        <h2>Amys Smith</h2>
         <p>Sexo: Femenino</p>
       </div>
       
