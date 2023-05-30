@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+* {
+
+  /* border:1px solid rgb(233, 172, 80);*/
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 250, 250, 250;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 200, 200, 200;
+    --text-color: darkslategrey;
+    --border-color:white;
+  }
+}
+
+.App {
+  background: linear-gradient(to bottom right, #e3be91, #f4ad4f);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+
+}
+
+.App {
+  max-width: 90vw;
+  margin: 20px auto;
+  height: 100vh;
+  border-radius: 20px;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.profile-section {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+
+.photo-wrapper {
+  width: 20%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+
+.photo-wrapper img {
+  border-radius: 50%;
+  width: 80%;
+  }
+
+.info-wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-wrapper h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.info-wrapper p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Estilos para los botones */
+.section-btn {
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0px 0px 20px 0px ;
+  text-align: center;
+  width: 15vw;
+  padding:20px;
+
+  transition: btn-animation 2s repeat;
+}
+.section-btn.active{
+  color:white;
+  background-color: #cca777;
+  padding:20px;
+  border-radius:4%;
+
+}
+
+@keyframes btn-animation {
+
+  0%{
+    background-color: transparent;
+  }
+  100%{
+    background-color: #cca777;
+  }
+  
+}
+/* Estilos para el contenedor de los botones */
+.section-nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para las secciones */
+.section {
+  display: none;
+  padding: 2em;
+  text-align: justify;
+}
+
+/* Estilos para la sección activa */
+.section.active {
+  display: block;
+  color: #333;
+}
+
+.section-container {
+  width: 100%;
+}
