@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Profile from './Profile'
+import Profile from './Profile';
+import MyCalendar from './MyCalendar';
 
 function ProfileSection() {
 
@@ -30,7 +31,7 @@ function ProfileSection() {
           <div> <Profile />  </div>
         </section>
         <section className={`section ${activeSection === 2 ? 'active' : ''}`}>
-          <div> 2 </div>
+          <div> <MyCalendar /> </div>
         </section>
         <section className={`section ${activeSection === 3 ? 'active' : ''}`}>
           <div> 3 </div>
